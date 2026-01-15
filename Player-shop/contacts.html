@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты – Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактная информация интернет-магазина Player. Форма обратной связи и карта.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="header__top">
+        <div class="header__logo">
+            <span class="header__logo-text">Player</span>
+        </div>
+
+        <button class="header__burger" aria-label="Открыть меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="contacts">
+        <h1 class="section-title">Контакты</h1>
+        <div class="contacts__grid">
+            <div class="contacts__info">
+                <p class="contacts__text">
+                    Свяжитесь с нами, если вам нужна консультация по подбору игровой сборки или вы хотите уточнить детали заказа.
+                </p>
+                <ul class="contacts__list">
+                    <li class="contacts__item"><strong>Телефон:</strong> +7 (900) 123-45-67</li>
+                    <li class="contacts__item"><strong>Email:</strong> info@player-shop.ru</li>
+                    <li class="contacts__item"><strong>Адрес:</strong> г. Москва, ул. Игровая, д. 7</li>
+                </ul>
+
+                <form class="contacts__form form" id="contact-form">
+                    <h3 class="form__title">Форма обратной связи</h3>
+
+                    <label class="form__field">
+                        <span class="form__label">Ваше имя</span>
+                        <input type="text" name="name" class="form__input" required>
+                    </label>
+
+                    <label class="form__field">
+                        <span class="form__label">Email</span>
+                        <input type="email" name="email" class="form__input" required>
+                    </label>
+
+                    <label class="form__field">
+                        <span class="form__label">Сообщение</span>
+                        <textarea name="message" class="form__textarea" rows="4" required></textarea>
+                    </label>
+
+                    <button type="submit" class="button button_primary form__submit">Отправить</button>
+
+                    <p class="form__success-message" id="form-success-message"></p>
+                </form>
+            </div>
+
+            <div class="contacts__map-wrapper">
+                
+                <iframe
+                    class="contacts__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7346244180734!2d30.31413!3d59.93863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjEiTiAzMMKwMTgnNTMuMCJF!5e0!3m2!1sru!2sru!4v1700000000000"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <p class="footer__copy">© 2026 Player. Все права защищены.</p>
+        <nav class="footer__nav">
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="catalog.html" class="footer__link">Каталог</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+        </nav>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

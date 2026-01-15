@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Player – интернет-магазин игровой техники</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Player – интернет-магазин игровой техники: игровые компьютеры, ноутбуки, периферия.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page_catalog">
+
+<header class="header">
+    <div class="header__top">
+        <div class="header__logo">
+            <span class="header__logo-text">Player</span>
+        </div>
+
+        <button class="header__burger" aria-label="Открыть меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Player – твой мир игровой техники</h1>
+            <p class="hero__subtitle">
+                Сборки для киберспорта, мощные ноутбуки и периферия — всё в одном магазине.
+            </p>
+            <div class="hero__actions">
+                <a href="catalog.html" class="button button_primary">Перейти в каталог</a>
+                <button class="button button_outline" id="hero-scroll-button">Акции и хиты</button>
+            </div>
+        </div>
+        <div class="hero__image-wrapper">
+            <img src="img/hero-main.jpg" alt="Игровой компьютер" class="hero__image">
+        </div>
+    </section>
+
+
+    <section class="advantages">
+        <h2 class="section-title">Почему выбирают Player</h2>
+        <div class="advantages__list">
+            <article class="advantages__item">
+                <h3 class="advantages__title">Только игровая техника</h3>
+                <p class="advantages__text">
+                    ПК, ноутбуки и периферия, протестированные в актуальных играх.
+                </p>
+            </article>
+            <article class="advantages__item">
+                <h3 class="advantages__title">Гарантия и сервис</h3>
+                <p class="advantages__text">
+                    Официальная гарантия и поддержка на каждом этапе покупки.
+                </p>
+            </article>
+            <article class="advantages__item">
+                <h3 class="advantages__title">Быстрая доставка</h3>
+                <p class="advantages__text">
+                    Отправка по всей России, удобные способы оплаты.
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="catalog">
+        <div class="catalog__header">
+            <h2 class="section-title">Хиты продаж</h2>
+            <a href="catalog.html" class="button button_outline button_small">Смотреть весь каталог</a>
+        </div>
+
+        <div class="catalog__grid">
+            <article class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="img/product-pc-1.jpg" alt="Игровой ПК Player Inferno" class="product-card__image">
+                </div>
+                <h3 class="product-card__title">Player Inferno</h3>
+                <p class="product-card__specs">
+                    Intel i7 / RTX 4070 / 32 ГБ RAM / SSD 1 ТБ
+                </p>
+                <div class="product-card__bottom">
+                    <span class="product-card__price">159 990 ₽</span>
+                    <a href="catalog.html" class="button button_small product-card__button">Подробнее</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="img/product-laptop-1.jpg" alt="Игровой ноутбук Player Pulse 15" class="product-card__image">
+                </div>
+                <h3 class="product-card__title">Player Pulse 15</h3>
+                <p class="product-card__specs">
+                    15.6&quot; / Ryzen 5 / RTX 4050 / 16 ГБ RAM
+                </p>
+                <div class="product-card__bottom">
+                    <span class="product-card__price">119 990 ₽</span>
+                    <a href="catalog.html" class="button button_small product-card__button">Подробнее</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="img/product-mouse-1.jpg" alt="Игровая мышь Player Strike" class="product-card__image">
+                </div>
+                <h3 class="product-card__title">Player Strike</h3>
+                <p class="product-card__specs">
+                    16 000 DPI / RGB-подсветка / эргономичный хват
+                </p>
+                <div class="product-card__bottom">
+                    <span class="product-card__price">4 990 ₽</span>
+                    <a href="catalog.html" class="button button_small product-card__button">Подробнее</a>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <p class="footer__copy">© 2026 Player. Все права защищены.</p>
+        <nav class="footer__nav">
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="catalog.html" class="footer__link">Каталог</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+        </nav>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
